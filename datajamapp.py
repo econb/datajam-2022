@@ -14,11 +14,11 @@ from sentence_transformers import SentenceTransformer, util
 import streamlit as st
 
 st.title("DATAJAM CRC 2022")
-st.markdown("**Temática**: Contenidos Audiovisuales  "+
-"**Enunciado del reto**: ¿Qué estrategias pueden ser propuestas para promover la elección informada de los usuarios de televisión abierta a partir del contenido presentado en las parrillas de programación?  "+
+st.markdown("**Temática**: Contenidos Audiovisuales.  "+
+"**Enunciado del reto**: ¿Qué estrategias pueden ser propuestas para promover la elección informada de los usuarios de televisión abierta a partir del contenido presentado en las parrillas de programación?.  "+
 "**Descripción del reto**: Proponer estrategias de visualización y comunicación de datos de los contenidos audiovisuales de la televisión abierta, buscando que los usuarios puedan tomar decisiones sobre los contenidos que desean consumir, tomando en consideración las similitudes o diferencias existentes entre las parrillas de programación presentadas.  "+
-"**Tipo de reto**: Exploratorio  "+
-"**Datos sugeridos**: Parrilla de programación televisión abierta")
+"**Tipo de reto**: Exploratorio.  "+
+"**Datos sugeridos**: Parrilla de programación televisión abierta.")
 
 @st.cache
 def inicializar():
@@ -45,7 +45,7 @@ def inicializar():
 parrilla, myTransformer, programasTvEmbds = inicializar()
 
 #===================================================
-termBusqueda = st.text_input("¿Qué programas de TV le gustaría ver?") 
+termBusqueda = st.text_input("¿Qué temática de TV le gustaría ver?") 
 #===================================================
 
 # Embedding
@@ -86,3 +86,5 @@ nombres = grilla.mark_text(
 )
 
 st.altair_chart(grilla + nombres, use_container_width=True)
+
+st.markdown("Desarrollado por: Eduardo Contreras Bohórquez econtrerasb@unal.edu.co")
