@@ -10,9 +10,7 @@ Original file is located at
 import pandas as pd
 import numpy as np
 import altair as alt
-!pip install -U sentence-transformers
 from sentence_transformers import SentenceTransformer, util
-!pip install streamlit
 import streamlit as st
 
 st.title("DATAJAM CRC 2022")
