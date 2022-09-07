@@ -87,4 +87,4 @@ nombres = grilla.mark_text(
 
 st.altair_chart(grilla + nombres, use_container_width=True)
 
-st.markdown("Desarrollado por: Eduardo Contreras Bohórquez econtrerasb@unal.edu.co")
+st.markdown("Desarrollado por: Eduardo Contreras Bohórquez.")
